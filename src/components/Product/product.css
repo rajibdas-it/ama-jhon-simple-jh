@@ -1,0 +1,24 @@
+.product img {
+    width: 200px;
+    height: 200px;
+}
+
+.product {
+    display: flex;
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+}
+
+.text-css {
+    color: blue;
+    font-weight: 200;
+}
+
+.my-btn {
+    background-color: goldenrod;
+    width: 150px;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
