@@ -6,11 +6,17 @@ import './Shop.css'
 const Shop = () => {
     const first10 = fakeProduct.slice(0, 10);
     const [products, setProduct] = useState(first10);
+    const addCartHandler = (product) => {
+        console.log("Add to card", product)
+    }
     return (
         <div className='shop-container'>
             <div className="product-container">
                 {
-                    products.map(pd => <Product product={pd}></Product>)
+                    products.map(pd => <Product
+                        addCartHandler={addCartHandler}
+                        product={pd}
+                    ></Product>)
                 }
 
             </div>
